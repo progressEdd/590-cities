@@ -20,38 +20,38 @@
     <datasource caption='result' inline='true' name='federated.0jb60kj0b480uh17nmgml09yjob6' version='18.1'>
       <connection class='federated'>
         <named-connections>
-          <named-connection caption='result' name='textscan.12d1qec09446v1187sw1k13987do'>
-            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/etang7/Documents/590-cities/result.csv' dataRefreshTime='' directory='C:/Users/etang7/Documents/590-cities/Data' filename='cities.csv' interpretationMode='8' password='' server='' validate='no' />
+          <named-connection caption='cities' name='textscan.1iuowg319g0l281cm4l3o0zyugnd'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/etang7/Documents/590-cities/Data/cities.csv' dataRefreshTime='' directory='C:/Users/etang7/Documents/590-cities/Data' filename='C:/Users/etang7/AppData/Local/Temp/TableauTemp/1bvsa3z11k8dwo10vjbxm0hi1k6o/cities.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.12d1qec09446v1187sw1k13987do' name='cities.csv' table='[cities#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1iuowg319g0l281cm4l3o0zyugnd' name='cities.csv' table='[cities#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:K112:no:A1:K112:2' header='yes' locale='en_US' separator=','>
             <column datatype='integer' name='F1' ordinal='0' />
-            <column datatype='integer' name='Rank' ordinal='1' />
-            <column datatype='string' name='City' ordinal='2' />
-            <column datatype='real' name='Cost of Living Index' ordinal='3' />
-            <column datatype='real' name='Rent Index' ordinal='4' />
-            <column datatype='real' name='Cost of Living Plus Rent Index' ordinal='5' />
-            <column datatype='real' name='Groceries Index' ordinal='6' />
-            <column datatype='real' name='Restaurant Price Index' ordinal='7' />
-            <column datatype='real' name='Local Purchasing Power Index' ordinal='8' />
-            <column datatype='string' name='Country' ordinal='9' />
-            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Rank Rank' ordinal='1' />
+            <column datatype='string' name='City City' ordinal='2' />
+            <column datatype='real' name='Cost of Living Index Cost of Living Index' ordinal='3' />
+            <column datatype='real' name='Rent Index Rent Index' ordinal='4' />
+            <column datatype='real' name='Cost of Living Plus Rent Index Cost of Living Plus Rent Index' ordinal='5' />
+            <column datatype='real' name='Groceries Index Groceries Index' ordinal='6' />
+            <column datatype='real' name='Restaurant Price Index Restaurant Price Index' ordinal='7' />
+            <column datatype='real' name='Local Purchasing Power Index Local Purchasing Power Index' ordinal='8' />
+            <column datatype='string' name='Country Country' ordinal='9' />
+            <column datatype='string' name='State State' ordinal='10' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.12d1qec09446v1187sw1k13987do' name='cities.csv' table='[cities#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1iuowg319g0l281cm4l3o0zyugnd' name='cities.csv' table='[cities#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:K112:no:A1:K112:2' header='yes' locale='en_US' separator=','>
             <column datatype='integer' name='F1' ordinal='0' />
-            <column datatype='integer' name='Rank' ordinal='1' />
-            <column datatype='string' name='City' ordinal='2' />
-            <column datatype='real' name='Cost of Living Index' ordinal='3' />
-            <column datatype='real' name='Rent Index' ordinal='4' />
-            <column datatype='real' name='Cost of Living Plus Rent Index' ordinal='5' />
-            <column datatype='real' name='Groceries Index' ordinal='6' />
-            <column datatype='real' name='Restaurant Price Index' ordinal='7' />
-            <column datatype='real' name='Local Purchasing Power Index' ordinal='8' />
-            <column datatype='string' name='Country' ordinal='9' />
-            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Rank Rank' ordinal='1' />
+            <column datatype='string' name='City City' ordinal='2' />
+            <column datatype='real' name='Cost of Living Index Cost of Living Index' ordinal='3' />
+            <column datatype='real' name='Rent Index Rent Index' ordinal='4' />
+            <column datatype='real' name='Cost of Living Plus Rent Index Cost of Living Plus Rent Index' ordinal='5' />
+            <column datatype='real' name='Groceries Index Groceries Index' ordinal='6' />
+            <column datatype='real' name='Restaurant Price Index Restaurant Price Index' ordinal='7' />
+            <column datatype='real' name='Local Purchasing Power Index Local Purchasing Power Index' ordinal='8' />
+            <column datatype='string' name='Country Country' ordinal='9' />
+            <column datatype='string' name='State State' ordinal='10' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
         <metadata-records>
@@ -63,12 +63,11 @@
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K111:no:A1:K111:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>880</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
@@ -81,7 +80,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rank</remote-name>
@@ -93,22 +95,26 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>City</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[City]</local-name>
             <parent-name>[cities.csv]</parent-name>
             <remote-alias>City</remote-alias>
             <ordinal>2</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Cost of Living Index</remote-name>
@@ -119,8 +125,12 @@
             <ordinal>3</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
+            <precision>15</precision>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Rent Index</remote-name>
@@ -131,8 +141,12 @@
             <ordinal>4</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
+            <precision>15</precision>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Cost of Living Plus Rent Index</remote-name>
@@ -143,8 +157,12 @@
             <ordinal>5</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
+            <precision>15</precision>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Groceries Index</remote-name>
@@ -155,8 +173,12 @@
             <ordinal>6</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
+            <precision>15</precision>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Restaurant Price Index</remote-name>
@@ -167,8 +189,12 @@
             <ordinal>7</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
+            <precision>15</precision>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Local Purchasing Power Index</remote-name>
@@ -179,38 +205,44 @@
             <ordinal>8</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
+            <precision>15</precision>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Country</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[Country]</local-name>
             <parent-name>[cities.csv]</parent-name>
             <remote-alias>Country</remote-alias>
             <ordinal>9</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>State</remote-name>
-            <remote-type>129</remote-type>
+            <remote-type>130</remote-type>
             <local-name>[State]</local-name>
             <parent-name>[cities.csv]</parent-name>
             <remote-alias>State</remote-alias>
             <ordinal>10</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
         </metadata-records>
       </connection>
@@ -226,7 +258,7 @@
       <column datatype='real' name='[Rent Index]' role='measure' type='quantitative' />
       <column datatype='real' name='[Restaurant Price Index]' role='measure' type='quantitative' />
       <column caption='State' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <_.fcp.ObjectModelTableType.true...column caption='cities.csv' datatype='table' name='[__tableau_internal_object_id__].[cities.csv_953B67A0FBA149D4BDB794E9253CB4DE]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='cities.csv' datatype='table' name='[__tableau_internal_object_id__].[cities.csv_430A602D22F24C35B1704FD5DBBB8A87]' role='measure' type='quantitative' />
       <column-instance column='[City Set]' derivation='InOut' name='[io:City Set:nk]' pivot='key' type='nominal' />
       <column-instance column='[Cost of Living Index]' derivation='Sum' name='[sum:Cost of Living Index:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Cost of Living Plus Rent Index]' derivation='Sum' name='[sum:Cost of Living Plus Rent Index:qk]' pivot='key' type='quantitative' />
@@ -305,21 +337,21 @@
       </semantic-values>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='cities.csv' id='cities.csv_953B67A0FBA149D4BDB794E9253CB4DE'>
+          <object caption='cities.csv' id='cities.csv_430A602D22F24C35B1704FD5DBBB8A87'>
             <properties context=''>
-              <relation connection='textscan.12d1qec09446v1187sw1k13987do' name='cities.csv' table='[cities#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <relation connection='textscan.1iuowg319g0l281cm4l3o0zyugnd' name='cities.csv' table='[cities#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:K112:no:A1:K112:2' header='yes' locale='en_US' separator=','>
                   <column datatype='integer' name='F1' ordinal='0' />
-                  <column datatype='integer' name='Rank' ordinal='1' />
-                  <column datatype='string' name='City' ordinal='2' />
-                  <column datatype='real' name='Cost of Living Index' ordinal='3' />
-                  <column datatype='real' name='Rent Index' ordinal='4' />
-                  <column datatype='real' name='Cost of Living Plus Rent Index' ordinal='5' />
-                  <column datatype='real' name='Groceries Index' ordinal='6' />
-                  <column datatype='real' name='Restaurant Price Index' ordinal='7' />
-                  <column datatype='real' name='Local Purchasing Power Index' ordinal='8' />
-                  <column datatype='string' name='Country' ordinal='9' />
-                  <column datatype='string' name='State' ordinal='10' />
+                  <column datatype='integer' name='Rank Rank' ordinal='1' />
+                  <column datatype='string' name='City City' ordinal='2' />
+                  <column datatype='real' name='Cost of Living Index Cost of Living Index' ordinal='3' />
+                  <column datatype='real' name='Rent Index Rent Index' ordinal='4' />
+                  <column datatype='real' name='Cost of Living Plus Rent Index Cost of Living Plus Rent Index' ordinal='5' />
+                  <column datatype='real' name='Groceries Index Groceries Index' ordinal='6' />
+                  <column datatype='real' name='Restaurant Price Index Restaurant Price Index' ordinal='7' />
+                  <column datatype='real' name='Local Purchasing Power Index Local Purchasing Power Index' ordinal='8' />
+                  <column datatype='string' name='Country Country' ordinal='9' />
+                  <column datatype='string' name='State State' ordinal='10' />
                 </columns>
               </relation>
             </properties>
